@@ -177,10 +177,10 @@
             <div class="hire">
               <h2>What Can We Do For You?</h2>
               <!-- checkout formspree.io for easy form setup -->
-              <form class="work-request" method="post">
+              <form class="work-request" action="https://formspree.io/f/xyyaekde" method="POST">
                 <div class="work-request--options">
                   <span class="options-a">
-                    <input id="opt-1" type="checkbox" value="Export">
+                    <input name = "opt[]" id = "opt-1" type="checkbox" value="Export">
                     <label for="opt-1">
                       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                       viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
@@ -190,7 +190,7 @@
                       </svg>
                       Export
                     </label>
-                    <input id="opt-3" type="checkbox" value="Buy for you">
+                    <input name = "opt[]" id = "opt-3" type="checkbox" value="Buy for you">
                     <label for="opt-3">
                       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                       viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
@@ -202,7 +202,7 @@
                     </label>
                   </span>
                   <span class="options-b">
-                    <input id="opt-2" type="checkbox" value="Import">
+                    <input name = "opt[]" id = "opt-2" type="checkbox" value="Import">
                     <label for="opt-2">
                       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                       viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
@@ -212,7 +212,7 @@
                       </svg>
                       Import
                     </label>                    
-                    <input id="opt-4" type="checkbox" value="marketing">
+                    <input name = "opt[]" id="opt-4" type="checkbox" value="marketing">
                     <label for="opt-4">
                       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                       viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
@@ -226,15 +226,15 @@
                 </div>
                 <div class="work-request--information">
                   <div class="information-name">
-                    <input id="name" type="text" spellcheck="false">
+                    <input name = "name" id="name" type="text" spellcheck="false" required>
                     <label for="name">Name</label>
                   </div>
                   <div class="information-email">
-                    <input id="email" type="email" spellcheck="false">
+                    <input name = "userEmail" id="email" type="email" spellcheck="false" required>
                     <label for="email">Email</label>
                   </div>
                 </div>
-                <input type="submit" name = "submit" value="Send Request">
+                <input type="submit" name = "submit">
               </form>
             </div>
           </li>
